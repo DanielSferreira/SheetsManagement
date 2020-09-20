@@ -4,14 +4,14 @@
     "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/SheetsManagement/SheetsManagement.csproj": {}
   },
   "projects": {
-    "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/SheetsManagement/SheetsManagement.csproj": {
+    "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/ManageSheets/ManageSheets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/SheetsManagement/SheetsManagement.csproj",
-        "projectName": "SheetsManagement",
-        "projectPath": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/SheetsManagement/SheetsManagement.csproj",
+        "projectUniqueName": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/ManageSheets/ManageSheets.csproj",
+        "projectName": "ManageSheets",
+        "projectPath": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/ManageSheets/ManageSheets.csproj",
         "packagesPath": "/home/dSilva/.nuget/packages/",
-        "outputPath": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/SheetsManagement/obj/",
+        "outputPath": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/ManageSheets/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/dSilva/.nuget/NuGet/NuGet.Config"
@@ -36,6 +36,81 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspnetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspnetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/SheetsManagement/SheetsManagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/SheetsManagement/SheetsManagement.csproj",
+        "projectName": "SheetsManagement",
+        "projectPath": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/SheetsManagement/SheetsManagement.csproj",
+        "packagesPath": "/home/dSilva/.nuget/packages/",
+        "outputPath": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/SheetsManagement/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dSilva/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/ManageSheets/ManageSheets.csproj": {
+                "projectPath": "/home/dSilva/Documentos/projetos/dotnet/SheetsManagement/ManageSheets/ManageSheets.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
               "version": "[2.1.0, )"
@@ -47,6 +122,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "coverlet.collector": {
               "target": "Package",
